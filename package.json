@@ -4,7 +4,7 @@
   "main": "src/mi-componente.js",
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "plop": "plop"
@@ -19,7 +19,7 @@
   "description": "",
   "dependencies": {
     "bootstrap-icons": "^1.11.3",
-    "lit": "^3.2.0",
+    "lit": "^3.2.1",
     "vite": "^5.4.8"
   },
   "devDependencies": {
@@ -29,7 +29,10 @@
     "@storybook/test": "^8.4.2",
     "@storybook/web-components": "^8.4.2",
     "@storybook/web-components-vite": "^8.4.2",
+    "@testing-library/react": "^16.0.1",
+    "jsdom": "^25.0.1",
     "plop": "^4.0.1",
-    "storybook": "^8.4.2"
+    "storybook": "^8.4.2",
+    "vitest": "^2.1.5"
   }
 }
