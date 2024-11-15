@@ -1,8 +1,8 @@
 
 import { html, LitElement, css, unsafeCSS } from 'lit';
-import styles from './nueva-prueba.scss';
+import styles from './diver-gente.scss';
 
-class NuevaPrueba extends LitElement {
+class DiverGente extends LitElement {
   static get is() {
     return 'base-component';
   }
@@ -24,7 +24,7 @@ class NuevaPrueba extends LitElement {
   }
 
   render() {
-    return html`<div>Hola Mundo</div>`;
+    return html`<p>¡Hola desde Lit!</p>`;
   }
 
   _exampleMethod() {
@@ -40,4 +40,4 @@ class NuevaPrueba extends LitElement {
   }
 }
 
-customElements.define('nueva-prueba', NuevaPrueba);
+customElements.define('diver-gente', DiverGente);

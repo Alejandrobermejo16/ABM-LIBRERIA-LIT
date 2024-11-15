@@ -62,7 +62,7 @@ class {{pascalCase name}} extends LitElement {
   }
 
   render() {
-    return html\`<div>Hola Mundo</div>\`;
+    return html\`<p>¡Hola desde Lit!</p>\`;
   }
 
   _exampleMethod() {
@@ -149,6 +149,12 @@ describe('{{pascalCase name}}', () => {
           // Cambiar al directorio recién creado y ejecutar 'pnpm install'
           execSync('pnpm install', { stdio: 'inherit', cwd: targetDir });
           console.log('Dependencias instaladas con éxito.');
+
+          // Ahora ejecutamos 'pnpm add -D sass' en ese directorio
+          console.log(`Ejecutando 'pnpm add -D sass' en ${targetDir}...`);
+          execSync('pnpm add -D sass', { stdio: 'inherit', cwd: targetDir });
+          console.log('Sass instalado con éxito.');
+
         } catch (error) {
           console.error(`Error al instalar dependencias en ${targetDir}:`, error.message);
           throw new Error(`Error al instalar dependencias: ${error.message}`);
