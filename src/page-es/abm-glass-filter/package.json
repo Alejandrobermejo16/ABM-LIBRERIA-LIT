@@ -1,5 +1,5 @@
 {
-  "name": "page-diver-gente",
+  "name": "page-abm-glass-filter",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "@open-wc/testing": "^2.0.0",
+    "@open-wc/testing-helpers": "^3.0.1",
     "sass": "^1.81.0",
+    "sinon": "^19.0.2",
     "vite": "^4.0.0",
     "vitest": "^0.33.0"
   }
