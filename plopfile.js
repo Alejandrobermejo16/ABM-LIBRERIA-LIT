@@ -163,11 +163,10 @@ describe('{{pascalCase name}}', () => {
           // Cambiar al directorio recién creado y ejecutar 'pnpm install'
           execSync("pnpm install", { stdio: "inherit", cwd: targetDir });
           console.log("Dependencias instaladas con éxito.");
-
-          // Ahora ejecutamos 'pnpm add -D sass' en ese directorio
-          console.log(`Ejecutando 'pnpm add -D sass' en ${targetDir}...`);
-          execSync("pnpm add -D sass", { stdio: "inherit", cwd: targetDir });
-          console.log("Sass instalado con éxito.");
+         // Ahora ejecutamos 'pnpm add -D sass' en ese directorio
+         console.log(`Ejecutando 'pnpm add -D sass' en ${targetDir}...`);
+         execSync("pnpm add -D sass", { stdio: "inherit", cwd: targetDir });
+         console.log("Sass instalado con éxito.");
         } catch (error) {
           console.error(
             `Error al instalar dependencias en ${targetDir}:`,

@@ -37,6 +37,7 @@ class AbmGlassFilter extends LitElement {
           @input="${this._foundValue}"
           placeholder="Buscar..."
           .value="${this.searchValue}"
+          area-label="Campo de búsqueda"
         />
         <span class="icon">🔍</span>
       </div>
